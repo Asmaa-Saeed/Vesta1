@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
 
@@ -10,16 +11,68 @@ const Navbar: React.FC = () => {
         Vesta
       </div>
      
-     
-
-     {/* Navigation Links */}
-     <div className="flex space-x-6 text-gray-700">
-        <a href="#" className="relative hover:text-red-600 transition duration-400after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-400 hover:after:w-full">الرئيسية</a>
-        <a href="#" className="relative hover:text-red-600 transition duration-400after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-400 hover:after:w-full">بحث</a>
-        <a href="#" className="relative hover:text-red-600 transition duration-400after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-400 hover:after:w-full">بيع</a>
-        <a href="#" className="relative hover:text-red-600 transition duration-400after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-400 hover:after:w-full">أحدث الاخبار</a>
-        <a href="#" className="relative hover:text-red-600 transition duration-400after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-400 hover:after:w-full">عنا</a>
-        <a href="#" className="relative hover:text-red-600 transition duration-400after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-400 hover:after:w-full">تواصل معنا</a>
+       {/* Navigation Links */}
+       <div className="flex space-x-6 text-gray-700">
+        <NavLink
+          to="/home"
+          className={({ isActive }) =>
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+            }`
+          }
+        >
+          الرئيسية
+        </NavLink>
+        <NavLink
+          to="/properties"
+          className={({ isActive }) =>
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+            }`
+          }
+        >
+          بحث
+        </NavLink>
+        <NavLink
+          to="/sell"
+          className={({ isActive }) =>
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+            }`
+          }
+        >
+          بيع
+        </NavLink>
+        <NavLink
+          to="/blog"
+          className={({ isActive }) =>
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+            }`
+          }
+        >
+          أحدث الاخبار
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+            }`
+          }
+        >
+          عنا
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+            }`
+          }
+        >
+          تواصل معنا
+        </NavLink>
       </div>
 
 
