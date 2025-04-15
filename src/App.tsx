@@ -7,6 +7,7 @@ import Blog from "./Pages/Blog"
 import Contact from "./Pages/Contact"
 import Sell from "./Pages/Sell"
 import About from "./Pages/About"
+import Register from "./Pages/Registeration/Register"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
     </Router>
     </>

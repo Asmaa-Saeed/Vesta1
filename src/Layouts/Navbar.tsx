@@ -1,8 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink  , useNavigate} from 'react-router-dom';
 
 const Navbar: React.FC = () => {
+  const navigate = useNavigate();
 
+  const handleRegisterClick = () => {
+    navigate('/register');
+  };
   return (
     <nav className="flex items-center justify-between bg-white shadow-md p-4" dir="rtl">
 
@@ -77,7 +81,9 @@ const Navbar: React.FC = () => {
 
 
        {/* Red Button */}
-       <button className="bg-red-600 cursor-pointer text-white font-semibold py-1.5 px-4 rounded-lg hover:bg-red-700 transition">
+       <button
+        onClick={handleRegisterClick}
+        className="bg-red-600 cursor-pointer text-white font-semibold py-1.5 px-4 rounded-lg hover:bg-red-700 transition">
         سجل الان
       </button>
       

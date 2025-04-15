@@ -1,8 +1,12 @@
+
+import HeroSection from "../Sections/PagesSections/Hero";
+
 const Home =  () => {
     return (
         <div>
-           home
+            <HeroSection/>
         </div>
+       
     )
 }
 
