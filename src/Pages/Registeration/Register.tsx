@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import { Link } from 'react-router-dom';
 
     interface FormData {
       name: string;
@@ -190,6 +191,16 @@ import 'react-phone-input-2/lib/style.css'
                 >
                   إنشاء حساب
                 </button>
+
+                {/* Login Link */}
+                <div className="text-center mt-4">
+                  <p className="text-gray-600">
+                    لديك حساب بالفعل؟{' '}
+                    <Link to="/login" className="text-red-600 hover:text-red-700 font-semibold">
+                      تسجيل الدخول
+                    </Link>
+                  </p>
+                </div>
 
                 {/* Social Login Options */}
                 <div className="mt-6 text-center">
