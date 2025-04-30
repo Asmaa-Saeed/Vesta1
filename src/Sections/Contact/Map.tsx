@@ -17,7 +17,7 @@ interface MapProps {
 }
 
 const Map: React.FC<MapProps> = ({ className = '', zoom = 13, disableInteraction = false }) => {
-  const position: [number, number] = [30.0444, 31.2357];
+  const position: [number, number] = [27.1783, 31.1859];
 
   return (
     <div className={`${className}`}>
@@ -36,8 +36,8 @@ const Map: React.FC<MapProps> = ({ className = '', zoom = 13, disableInteraction
         <Marker position={position}>
           <Popup>
             <div className="text-center">
-              <h3 className="font-bold">ShopCart Headquarters</h3>
-              <p>Cairo, Egypt</p>
+              <h3 className="font-bold">Vesta Headquarters</h3>
+              <p>Assuit, Egypt</p>
             </div>
           </Popup>
         </Marker>

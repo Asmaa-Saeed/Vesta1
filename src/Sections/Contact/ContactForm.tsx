@@ -34,6 +34,7 @@ const ContactForm: React.FC = () => {
             placeholder="الاسم"
             value={formData.name}
             onChange={handleChange}
+            autoComplete='name'
             className="w-full md:w-1/2 p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-gray-200 text-right"
           />
           <input
@@ -42,6 +43,7 @@ const ContactForm: React.FC = () => {
             placeholder="البريد الإلكتروني"
             value={formData.email}
             onChange={handleChange}
+            autoComplete='email'
             className="w-full md:w-1/2 p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-gray-200 text-right"
           />
         </div>
@@ -52,6 +54,7 @@ const ContactForm: React.FC = () => {
             placeholder="الموضوع"
             value={formData.subject}
             onChange={handleChange}
+            autoComplete='off'
             className="w-full md:w-1/2 p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-gray-200 text-right"
           />
           <input
@@ -60,6 +63,7 @@ const ContactForm: React.FC = () => {
             placeholder="رقم الجوال"
             value={formData.mobile}
             onChange={handleChange}
+            autoComplete='tel'
             className="w-full md:w-1/2 p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-gray-200 text-right"
           />
         </div>
@@ -68,6 +72,7 @@ const ContactForm: React.FC = () => {
           placeholder="رسالتك"
           value={formData.message}
           onChange={handleChange}
+          autoComplete='off'
           className="w-full p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-gray-200 h-32 text-right"
         />
         <button

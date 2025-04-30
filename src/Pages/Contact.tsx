@@ -38,7 +38,7 @@ const Contact = () => {
              <div className="flex items-center justify-end">
                <div className="text-right">
                  <p className="font-semibold tracking-wider">عنوان المكتب</p>
-                 <p className="text-gray-500 mt-2 tracking-wider">شارع البارك 1201، الجادة الخامسة</p>
+                 <p className="text-gray-500 mt-2 tracking-wider">محافظة أسيوط </p>
                </div>
                <span className="text-green-500 ml-3 mr-0">📍</span>
              </div>
@@ -49,7 +49,7 @@ const Contact = () => {
              <div className="flex items-center justify-end">
                <div className="text-right">
                  <p className="font-semibold tracking-wider">رقم الهاتف</p>
-                 <p className="text-gray-500 mt-2 tracking-wide">+22698 745 632, 02 982 745</p>
+                 <p className="text-gray-500 mt-2 tracking-wide">+201127012002</p>
                </div>
                <span className="text-green-500 ml-3 mr-0"><FaPhone size={20} /></span>
              </div>
@@ -60,7 +60,7 @@ const Contact = () => {
              <div className="flex items-center justify-end">
                <div className="text-right">
                  <p className="font-semibold tracking-wider">البريد الإلكتروني</p>
-                 <p className="text-gray-500 mt-2 tracking-wider">admin@shopcart.com</p>
+                 <p className="text-gray-500 mt-2 tracking-wider">Vesta@gmail.com</p>
                </div>
                <span className="text-blue-500 ml-3 mr-0"><FaEnvelope size={20} /></span>
              </div>
@@ -71,7 +71,7 @@ const Contact = () => {
              <div className="flex items-center justify-end">
                <div className="text-right">
                  <p className="font-semibold tracking-wider">موقعنا الإلكتروني</p>
-                 <p className="text-gray-500 mt-2 tracking-wider">www.shopcart.com</p>
+                 <p className="text-gray-500 mt-2 tracking-wider">www.vesta.com</p>
                </div>
                <span className="text-red-500 ml-3 mr-0">🌐</span>
              </div>
