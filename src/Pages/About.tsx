@@ -24,6 +24,7 @@ const AboutUs = () => {
             src={aboutUsImage}
             alt="House model"
             className="w-full h-80 object-cover"
+            loading="lazy"
           />
           <div className="p-6 text-center">
             <p className="text-base text-gray-600 leading-relaxed">
@@ -45,6 +46,7 @@ const AboutUs = () => {
                 src={missionImage}
                 alt="Mission"
                 className="w-full md:w-1/2 h-72 object-cover rounded-lg shadow-md"
+                loading="lazy"
               />
               <SectionCard
                 icon={
@@ -99,6 +101,7 @@ const AboutUs = () => {
                 src={visionImage}
                 alt="Vision"
                 className="w-full md:w-1/2 h-72 object-cover rounded-lg shadow-md"
+                loading="lazy"
               />
             </div>
           </div>
