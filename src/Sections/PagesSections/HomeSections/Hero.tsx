@@ -35,7 +35,7 @@ const HeroSection = () => {
             {/* Text container */}
             <div className="relative z-10 text-center text-white w-full sm:w-2/3 lg:w-2/3 px-5">
                 <h2
-                    className="text-2xl lg:text-4xl font-extrabold mb-6 text-[#B40000]"
+                    className="text-2xl lg:text-6xl font-extrabold mb-6 text-[#B40000]"
                     data-aos="fade-up"
                     data-aos-delay="100"
                 >
@@ -57,8 +57,8 @@ const HeroSection = () => {
                 {/* Call to action button */}
                 <div className="flex justify-center">
                     <button
-                        className="text-3xl font-extrabold rounded-lg text-white bg-[#B40000] transition transform hover:scale-105 py-3 px-20 lg:py-3 lg:px-20"
-                        onClick={() => (window.location.href = "tel:")}
+                        className="text-3xl font-extrabold rounded-lg text-white bg-[#B40000] transition transform hover:scale-105 py-3 px-20 lg:py-3 lg:px-20 cursor-pointer"
+                        onClick={() => (window.location.href = "./Properties")}
                     >
                         استثمر الان
                     </button>

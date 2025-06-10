@@ -78,13 +78,13 @@ export default function ThirdSection() {
                     <div
                     key={index}
                     ref={(el) => {
-                      cardRefs.current[index] = el!;
+                    cardRefs.current[index] = el!;
                     }}
                     className={`bg-white shadow-md rounded-lg p-4 text-center transition-all duration-1000 ease-in-out transform ${
-                      visibleCards.includes(index) ? "opacity-100 scale-100" : "opacity-0 scale-75"
+                    visibleCards.includes(index) ? "opacity-100 scale-100" : "opacity-0 scale-75"
                     }`}
-                  >
-                  
+                >
+
                         <div className="mb-4">
                             <div
                                 className="w-full h-[240px] mx-auto bg-gray-200 rounded-[3px]"
@@ -98,7 +98,7 @@ export default function ThirdSection() {
                         <h3 className="text-lg font-bold">{card.title}</h3>
                         <p className="text-gray-500 text-sm">{card.location}</p>
                         <div className="flex justify-between items-center mt-4">
-                            <button className="text-sm font-bold text-blue-600 border border-blue-600 px-4 py-1 rounded-lg hover:bg-blue-500 hover:text-white">
+                            <button className="text-sm font-bold text-blue-600 border border-blue-600 px-4 py-1 rounded-lg hover:bg-blue-500 hover:text-white cursor-pointer">
                                 عرض التفاصيل
                             </button>
                             <span className="text-blue-600 font-bold">{card.price}</span>

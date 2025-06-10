@@ -13,10 +13,10 @@ export default function FinalSection() {
                 </p>
                 {/* Buttons */}
                 <div className="flex justify-center space-x-4">
-                    <button className="bg-white text-[#4166F5] font-bold py-4 px-15 rounded-lg shadow-md hover:bg-gray-100 transition">
+                    <button className="bg-white text-[#4166F5] font-bold py-4 px-15 rounded-lg shadow-md hover:bg-gray-100 transition cursor-pointer">
                         ابدأ البيع
                     </button>
-                    <button className="border border-white text-white font-bold py-4 px-15 rounded-lg hover:bg-white hover:text-[#4166F5] transition">
+                    <button className="border border-white text-white font-bold py-4 px-15 rounded-lg hover:bg-white hover:text-[#4166F5] transition cursor-pointer">
                         ابدأ الاستثمار
                     </button>
                 </div>

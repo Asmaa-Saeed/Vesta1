@@ -24,8 +24,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-        <footer/>
-    </Router>
+        <footer />
+      </Router>
     </>
   )
 }
