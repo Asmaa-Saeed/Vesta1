@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FaBell, FaUserCircle } from 'react-icons/fa';
+=======
+import React from 'react';
+import { NavLink  , useNavigate} from 'react-router-dom';
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
 
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
 
+<<<<<<< HEAD
   const notificationCount = 2;
 
   const [showNotifications, setShowNotifications] = useState(false);
@@ -44,43 +50,80 @@ const Navbar: React.FC = () => {
 
       {/* Navigation Links */}
       <div className="flex gap-x-6 text-gray-700">
+=======
+  const handleRegisterClick = () => {
+    navigate('/register');
+  };
+  return (
+    <nav className="flex items-center justify-between bg-white shadow-md p-4" dir="rtl">
+
+        {/* Logo */}
+      <div className="text-xl font-bold text-gray-800">
+        Vesta
+      </div>
+     
+       {/* Navigation Links */}
+       <div className="flex space-x-6 text-gray-700">
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
         <NavLink
           to="/home"
           className={({ isActive }) =>
             `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+<<<<<<< HEAD
               isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+=======
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
             }`
           }
         >
           الرئيسية
         </NavLink>
+<<<<<<< HEAD
 
+=======
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
         <NavLink
           to="/properties"
           className={({ isActive }) =>
             `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+<<<<<<< HEAD
               isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+=======
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
             }`
           }
         >
           بحث
         </NavLink>
+<<<<<<< HEAD
 
+=======
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
         <NavLink
           to="/sell"
           className={({ isActive }) =>
             `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+<<<<<<< HEAD
               isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+=======
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
             }`
           }
         >
           بيع
         </NavLink>
+<<<<<<< HEAD
 
+=======
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
         <NavLink
           to="/blog"
           className={({ isActive }) =>
             `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+<<<<<<< HEAD
               isActive ? 'text-red-600 after:w-full' : 'after:w-0'
             }`
           }
@@ -88,22 +131,41 @@ const Navbar: React.FC = () => {
           أحدث الأخبار
         </NavLink>
 
+=======
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+            }`
+          }
+        >
+          أحدث الاخبار
+        </NavLink>
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
         <NavLink
           to="/about"
           className={({ isActive }) =>
             `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+<<<<<<< HEAD
               isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+=======
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
             }`
           }
         >
           عنا
         </NavLink>
+<<<<<<< HEAD
 
+=======
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
         <NavLink
           to="/contact"
           className={({ isActive }) =>
             `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
+<<<<<<< HEAD
               isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+=======
+              isActive ? 'text-red-600 after:w-0' : 'after:w-0'
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
             }`
           }
         >
@@ -111,6 +173,7 @@ const Navbar: React.FC = () => {
         </NavLink>
       </div>
 
+<<<<<<< HEAD
       {/* Right Section (Register + Notifications + Profile) */}
       <div className="flex items-center gap-x-4 relative">
         {/* Notification Icon */}
@@ -164,8 +227,22 @@ const Navbar: React.FC = () => {
           سجل الآن
         </button>
       </div>
+=======
+
+       {/* Red Button */}
+       <button
+        onClick={handleRegisterClick}
+        className="bg-red-600 cursor-pointer text-white font-semibold py-1.5 px-4 rounded-lg hover:bg-red-700 transition">
+        سجل الان
+      </button>
+      
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
     </nav>
   );
 };
 
+<<<<<<< HEAD
 export default Navbar;
+=======
+export default Navbar;
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1
