@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+const About =  () => {
+    return (
+        <div>
+           about
+        </div>
+    )
+}
+
+export default About;
+=======
 import Footer from "../Layouts/Footer";
 import SectionCard from "../components/SectionCard";
 import aboutUsImage from "../../public/assets/aboutUs/vision.png";
@@ -192,3 +203,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+>>>>>>> e2d41ed5df0df818ffbe1a005e08ce5db32f52e1

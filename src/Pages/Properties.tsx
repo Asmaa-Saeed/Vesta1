@@ -1,14 +1,17 @@
-import { useNavigate } from 'react-router-dom';
 
-const Properties =  () => {
-    const navigate = useNavigate();
+import Hero from "../Sections/PagesSections/PorepertySections/Hero";
+import SecondSectionProp from "../Sections/PagesSections/PorepertySections/SecondSectionProp";
+
+const Properties = () => {
     return (
-        <div>
-           <button onClick={() => navigate('/property-details')}>
-            details
-           </button>
-        </div>
-    )
+        <>
+            <div>
+                <Hero />
+                <SecondSectionProp />
+            </div>
+        </>
+
+    );
 }
 
 export default Properties;
