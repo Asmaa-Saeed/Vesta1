@@ -3,10 +3,14 @@ import Navbar from "./Layouts/Navbar"
 import Home from "./Pages/Home"
 import Properties from "./Pages/Properties"
 import Blog from "./Pages/Blog"
-import Contact from "./Pages/Contact"
 import Sell from "./Pages/Sell"
 import About from "./Pages/About"
 import Register from "./Pages/Registeration/Register"
+import PropertyDetails from "./Pages/PropertyDetails"
+import Contact from "./Pages/Contact"
+import Footer from "./Layouts/Footer"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; // Import Swiper styles
 
 
 function App() {
@@ -25,7 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-        <footer />
+        <Footer />
       </Router>
     </>
   )
