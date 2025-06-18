@@ -3,15 +3,12 @@ import Navbar from "./Layouts/Navbar"
 import Home from "./Pages/Home"
 import Properties from "./Pages/Properties"
 import Blog from "./Pages/Blog"
+import Contact from "./Pages/Contact"
 import Sell from "./Pages/Sell"
+import Profile from "./Pages/Profile"
 import About from "./Pages/About"
 import Register from "./Pages/Registeration/Register"
-import PropertyDetails from "./Pages/PropertyDetails"
-import Contact from "./Pages/Contact"
-import Footer from "./Layouts/Footer"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css'; // Import Swiper styles
-
+import Login from "./Pages/Registeration/Login"
 
 function App() {
 
@@ -20,16 +17,18 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/properties" element={<Properties />} />
-          <Route path="/property-details" element={<PropertyDetails />} />
           <Route path="/sell" element={<Sell />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-        <Footer />
+        <footer />
       </Router>
     </>
   )

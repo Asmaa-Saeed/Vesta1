@@ -1,6 +1,8 @@
+
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { FaBell, FaUserCircle } from 'react-icons/fa';
+import { FaBell, FaUserCircle, FaCog, FaUser, FaDoorOpen } from 'react-icons/fa';
+
 
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
@@ -12,6 +14,10 @@ const Navbar: React.FC = () => {
 
   const handleRegisterClick = () => {
     navigate('/register');
+  };
+
+  const handleProfileClick = () => {
+    navigate('/profile'); // التنقل إلى صفحة البروفايل
   };
 
   // Close popups when clicking outside
@@ -40,15 +46,16 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex items-center justify-between bg-white shadow-md p-4" dir="rtl">
       {/* Logo */}
-      <div className="text-xl font-bold text-gray-800">Vesta</div>
+      <div className="text-xl font-bold text-gray-800">
+        <img src="logo.jpg" className='w-[180px] h-[40px]' alt="" />
+      </div>
 
       {/* Navigation Links */}
-      <div className="flex gap-x-6 text-gray-700">
+      <div className="flex gap-x-7 text-gray-700">
         <NavLink
           to="/home"
           className={({ isActive }) =>
-            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
-              isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${isActive ? 'text-red-600 after:w-full' : 'after:w-0'
             }`
           }
         >
@@ -58,8 +65,7 @@ const Navbar: React.FC = () => {
         <NavLink
           to="/properties"
           className={({ isActive }) =>
-            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
-              isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${isActive ? 'text-red-600 after:w-full' : 'after:w-0'
             }`
           }
         >
@@ -69,8 +75,7 @@ const Navbar: React.FC = () => {
         <NavLink
           to="/sell"
           className={({ isActive }) =>
-            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
-              isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${isActive ? 'text-red-600 after:w-full' : 'after:w-0'
             }`
           }
         >
@@ -80,8 +85,7 @@ const Navbar: React.FC = () => {
         <NavLink
           to="/blog"
           className={({ isActive }) =>
-            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
-              isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${isActive ? 'text-red-600 after:w-full' : 'after:w-0'
             }`
           }
         >
@@ -91,19 +95,18 @@ const Navbar: React.FC = () => {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
-              isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${isActive ? 'text-red-600 after:w-full' : 'after:w-0'
             }`
           }
         >
           عنا
         </NavLink>
 
-        <NavLink
+
+<NavLink
           to="/contact"
           className={({ isActive }) =>
-            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${
-              isActive ? 'text-red-600 after:w-full' : 'after:w-0'
+            `relative transition duration-300 after:content-[''] after:absolute after:h-[2px] after:bg-red-600 after:bottom-[-4px] after:right-0 after:transition-all after:duration-300 hover:text-red-600 hover:after:w-full focus:text-red-600 focus:after:w-full ${isActive ? 'text-red-600 after:w-full' : 'after:w-0'
             }`
           }
         >
@@ -114,7 +117,7 @@ const Navbar: React.FC = () => {
       {/* Right Section (Register + Notifications + Profile) */}
       <div className="flex items-center gap-x-4 relative">
         {/* Notification Icon */}
-        <div className="relative notification-icon ml-5">
+        <div className="relative notification-icon ml-15">
           <FaBell
             className="text-2xl text-gray-600 hover:text-black transition cursor-pointer"
             onClick={() => setShowNotifications(!showNotifications)}
@@ -128,7 +131,7 @@ const Navbar: React.FC = () => {
 
         {/* Notification Popup */}
         {showNotifications && (
-          <div className="absolute top-10 right-0 bg-white shadow-lg rounded-lg w-64 p-4 z-50 notification-popup">
+          <div className="absolute top-13 right-0 bg-white shadow-lg rounded-lg w-90 p-4 z-50 notification-popup">
             <h3 className="text-lg font-bold text-gray-800 mb-2">الإشعارات</h3>
             <ul className="space-y-2">
               <li className="text-gray-700 border-b pb-2">إشعار 1: تم تحديث بياناتك بنجاح.</li>
@@ -138,7 +141,7 @@ const Navbar: React.FC = () => {
         )}
 
         {/* Profile Icon */}
-        <div className="relative profile-icon ml-25">
+        <div className="relative profile-icon ml-30">
           <FaUserCircle
             className="text-2xl text-gray-600 hover:text-black transition cursor-pointer"
             onClick={() => setShowProfileMenu(!showProfileMenu)}
@@ -149,9 +152,18 @@ const Navbar: React.FC = () => {
         {showProfileMenu && (
           <div className="absolute top-10 right-16 bg-white shadow-lg rounded-lg w-48 p-4 z-50 profile-popup">
             <ul className="space-y-2">
-              <li className="text-gray-700 hover:text-red-600 cursor-pointer">الملف الشخصي</li>
-              <li className="text-gray-700 hover:text-red-600 cursor-pointer">الإعدادات</li>
-              <li className="text-gray-700 hover:text-red-600 cursor-pointer">تسجيل الخروج</li>
+              <li
+                className="text-gray-700 flex hover:text-red-600 cursor-pointer"
+                onClick={handleProfileClick} // استدعاء التنقل عند النقر
+              >
+                الملف الشخصي <FaUser className='mr-4 mt-1' size={20} />
+              </li>
+              <li className="text-gray-700 flex hover:text-red-600 cursor-pointer">
+                الإعدادات <FaCog size={20} className="animate-spin-slow mr-4 mt-1" />
+              </li>
+              <li className="text-gray-700 flex hover:text-red-600 cursor-pointer">
+                تسجيل الخروج <FaDoorOpen className='mr-4 mt-1' size={24} />
+              </li>
             </ul>
           </div>
         )}
