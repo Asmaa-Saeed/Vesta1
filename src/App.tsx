@@ -9,6 +9,8 @@ import Profile from "./Pages/Profile"
 import About from "./Pages/About"
 import Register from "./Pages/Registeration/Register"
 import Login from "./Pages/Registeration/Login"
+import FAQ from "./Pages/FAQ"
+import ForgotPassword from "./Pages/Registeration/ForgotPassword"
 
 function App() {
 
@@ -25,8 +27,10 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/FAQ" element={<FAQ />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
         <footer />
       </Router>
