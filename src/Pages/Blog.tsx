@@ -186,7 +186,7 @@ const Blog: React.FC = () => {
         <span>عرض المزيد</span>
       </button>
       </div>
-      
+      <Footer />
     </div>
 
   );
