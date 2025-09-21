@@ -1,4 +1,4 @@
-import { FaBath, FaCheckCircle, FaBed, FaBolt, FaMapMarkerAlt, FaRulerCombined } from "react-icons/fa";
+import { FaCheckCircle , FaMapMarkerAlt } from "react-icons/fa";
 import { MdKingBed, MdOutlineBathtub, MdSquareFoot } from "react-icons/md";
 
 export default function PropertyDetails() {
